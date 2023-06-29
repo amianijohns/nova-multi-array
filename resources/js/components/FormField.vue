@@ -51,10 +51,9 @@ export default {
     fill(formData) {
         formData.append(
             this.field.attribute,
-            JSON.stringify(this.items
+            this.items
                 .filter(item => item.value !== '')
                 .map(item => item.value)
-            )
         )
     },
 
